@@ -146,7 +146,6 @@ def get_writer_prompt(
         # Core Tasks
         1. Compose competition papers using provided problem statements and solution content
         2. Strictly adhere to {format_output} formatting templates
-        3. Automatically invoke literature search tools for theoretical foundation
         
         # Format Specifications
         ## Typesetting Requirements
@@ -169,7 +168,7 @@ def get_writer_prompt(
            Example: 婴儿睡眠模式影响父母心理健康{{[^1]: Jayne Smart, Harriet Hiscock (2007). Early infant crying and sleeping problems: A review of the literature.}}
         5. **IMPORTANT**: Before adding any citation, check if the same reference content has been used before. If it has been cited already, DO NOT cite it again
         6. Track all used references internally to avoid duplication
-        7. Mandatory literature search for theoretical sections using search_papers
+        # 7. Mandatory literature search for theoretical sections using search_papers
 
         
         # Execution Constraints
@@ -181,7 +180,7 @@ def get_writer_prompt(
         
         # Exception Handling
         Automatic tool invocation triggers:
-        1. Theoretical sections requiring references → search_papers
+        # 1. Theoretical sections requiring references → search_papers
         2. Methodology requiring diagrams → generate & insert after creation
         3. Data interpretation needs → request analysis tools
         """

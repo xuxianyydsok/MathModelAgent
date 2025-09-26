@@ -31,21 +31,4 @@ coder_tools = [
 
 
 ## writeragent tools
-writer_tools = [
-    {
-        "type": "function",
-        "function": {
-            "name": "search_papers",
-            "description": "Search for papers using a query string.",
-            "strict": True,
-            "parameters": {
-                "type": "object",
-                "properties": {
-                    "query": {"type": "string", "description": "The query string"}
-                },
-            },
-            "required": ["query"],
-            "additionalProperties": False,
-        },
-    },
-]
+writer_tools = []
